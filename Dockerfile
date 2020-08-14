@@ -29,6 +29,7 @@ ENV LC_MESSAGES en_US.UTF-8
 # ENV GUNICORN_CMD_ARGS --log-level WARNING
 
 COPY requirements-python3.7.txt /requirements-python3.7.txt
+RUN  apt install vim -y
 
 RUN set -ex \
     && buildDeps=' \
